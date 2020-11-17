@@ -23,6 +23,6 @@ export function init(event, context) {
 }
 
 export function flush(e) {
-    logs.ForEach(({ date, string }) => console.debug(date, string));
+    logs.forEach(({ date, string }) => console.debug(date, string));
     console.error(e);
 }
