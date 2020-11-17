@@ -1,9 +1,7 @@
 import handler from "./libs/handler-lib";
 import dynamoDb from "./libs/dynamodb-lib";
 
-dynamoDb.notExist();
-
-export const main = handler(async (event, context) => {
+export const main2 = handler(async (event, context) => {
     const params = {
         TableName: process.env.tableName,
         Key: {
