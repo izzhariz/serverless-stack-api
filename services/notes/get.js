@@ -15,7 +15,7 @@ export const main = handler(async (event, context) => {
         throw new Error("Item not found.");
     }
 
-    await new Promise(resolve => setTimeout(resolve, 10000));
+    allocMem();
 
     return result.Item;
 });
